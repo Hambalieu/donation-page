@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support Our Fundraiser</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --primary-gradient: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
@@ -46,8 +48,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .header-image {
@@ -105,13 +114,19 @@
             background-color: var(--venmo-color);
             color: var(--text-light);
         }
-        .method-card.venmo:hover { background-color: #347eb5; }
+
+        .method-card.venmo:hover {
+            background-color: #347eb5;
+        }
 
         .method-card.cashapp {
             background-color: var(--cashapp-color);
             color: var(--text-light);
         }
-        .method-card.cashapp:hover { background-color: #00b32a; }
+
+        .method-card.cashapp:hover {
+            background-color: #00b32a;
+        }
 
         .method-card .icon {
             font-size: 1.5em;
@@ -141,17 +156,30 @@
         }
 
         /* Basic icon styling - can be replaced with actual SVGs */
-        .icon-venmo::before { content: 'V'; }
-        .icon-cashapp::before { content: '$'; }
-        .icon-zelle::before { content: 'Z'; }
+        .icon-venmo::before {
+            content: 'V';
+        }
 
+        .icon-cashapp::before {
+            content: '$';
+        }
+
+        .icon-zelle::before {
+            content: 'Z';
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <img src="https://via.placeholder.com/120/cccccc/ffffff?text=Fundraiser" alt="Fundraiser Image" class="header-image">
-        <h1>Support Our Fundraiser!</h1>
-        <p class="subtitle">Every contribution helps us reach our goal. Thank you for your generosity!</p>
+        <img src="https://via.placeholder.com/120/cccccc/ffffff?text=Fundraiser" alt="Fundraiser Image"
+            class="header-image">
+        <h1>Supporting Our Friend's Fight Against
+            Cancer</h1>
+        <p class="subtitle">Your generous
+            contribution will directly help with medical
+            expenses and support during this challenging
+            time. Thank you for your kindness and solidarity.</p>
 
         <div class="donation-methods">
             <a href="https://venmo.com/u/Hambalieu-Jallow" target="_blank" class="method-card venmo">
@@ -171,4 +199,5 @@
         </div>
     </div>
 </body>
+
 </html>
