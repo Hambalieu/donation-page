@@ -1,80 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate to the Fundraiser</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-            background-color: #fff;
-            padding: 2rem 3rem;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-            max-width: 400px;
-            width: 90%;
-        }
-        h1 {
-            color: #1a1a1a;
-            margin-bottom: 1.5rem;
-        }
-        .donation-options a {
-            display: block;
-            background-color: #007bff;
-            color: white;
-            padding: 15px 20px;
-            margin: 1rem 0;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: 500;
-            transition: background-color 0.3s ease;
-        }
-        .donation-options a:hover {
-            background-color: #0056b3;
-        }
-        .venmo { background-color: #3D95CE; }
-        .venmo:hover { background-color: #347eb5; }
-        .cashapp { background-color: #00D632; }
-        .cashapp:hover { background-color: #00b32a; }
-        .zelle-info {
-            margin-top: 1.5rem;
-            padding: 1rem;
-            background-color: #f3f3f3;
-            border-radius: 8px;
-            border: 1px solid #e0e0e0;
-        }
-        .zelle-info p {
-            margin: 0.5rem 0;
-            font-size: 1rem;
-        }
-        .zelle-info .email {
-            font-weight: bold;
-            color: #d9534f;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Donate to the Fundraiser</h1>
-        <div class="donation-options">
-            <a href="https://venmo.com/u/Hambalieu-Jallow" class="venmo" target="_blank">Donate with Venmo</a>
-            <a href="https://cash.app/$hambaj" class="cashapp" target="_blank">Donate with Cash App</a>
-        </div>
-        <div class="zelle-info">
-            <p>To donate with Zelle, please use the following email address:</p>
-            <p class="email">hambalieujallow@gmail.com</p>
-        </div>
-    </div>
-</body>
-</html>
+   1 <!DOCTYPE html>
+     2 <html lang="en">
+     3 <head>
+     4     <meta charset="UTF-8">
+     5     <meta name="viewport" content="width=device-width,
+       initial-scale=1.0">
+     6     <title>Donation Page</title>
+     7     <link href=
+       "https://fonts.googleapis.com/css2?family=Inter:wght@40
+       0;500;600;700&display=swap" rel="stylesheet">
+     8     <style>
+     9         :root {
+    10             --primary-color: #007bff;
+    11             --venmo-color: #3D95CE;
+    12             --cashapp-color: #00D632;
+    13             --zelle-color: #6D2780;
+    14             --light-gray: #f8f9fa;
+    15             --dark-gray: #343a40;
+    16             --border-radius: 12px;
+    17         }
+    18         body {
+    19             font-family: 'Inter', sans-serif;
+    20             background-color: var(--light-gray);
+    21             color: var(--dark-gray);
+    22             display: flex;
+    23             justify-content: center;
+    24             align-items: center;
+    25             min-height: 100vh;
+    26             margin: 0;
+    27             padding: 20px;
+    28             box-sizing: border-box;
+    29         }
+    30         .container {
+    31             text-align: center;
+    32             background-color: #ffffff;
+    33             padding: 40px;
+    34             border-radius: var(--border-radius);
+    35             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    36             max-width: 420px;
+    37             width: 100%;
+    38         }
+    39         .header img {
+    40             width: 100px;
+    41             height: 100px;
+    42             border-radius: 50%;
+    43             margin-bottom: 15px;
+    44             object-fit: cover;
+    45         }
+    46         h1 {
+    47             font-weight: 700;
+    48             font-size: 28px;
+    49             margin-bottom: 10px;
+    50         }
+    51         .fundraiser-title {
+    52             font-size: 20px;
+    53             font-weight: 500;
+    54             color: #6c757d;
+    55             margin-bottom: 30px;
+    56         }
+    57         .donation-options .btn {
+    58             display: flex;
+    59             align-items: center;
+    60             justify-content: center;
+    61             gap: 12px;
+    62             color: white;
+    63             padding: 16px;
+    64             margin: 15px 0;
+    65             border-radius: var(--border-radius);
+    66             text-decoration: none;
+    67             font-size: 18px;
+    68             font-weight: 600;
+    69             transition: transform 0.2s ease, box-shadow
+       0.2s ease;
+    70             border: none;
+    71             cursor: pointer;
+    72         }
+    73         .donation-options .btn:hover {
+    74             transform: translateY(-3px);
+    75             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    76         }
+    77         .donation-options .btn img {
+    78             height: 24px;
+    79         }
+    80         .btn.venmo { background-color:
+       var(--venmo-color); }
+    81         .btn.cashapp { background-color:
+       var(--cashapp-color); }
+    82         .zelle-info {
+    83             margin-top: 30px;
+    84             padding: 20px;
+    85             background-color: #f1f3f5;
+    86             border-radius: var(--border-radius);
+    87             text-align: center;
+    88         }
+    89         .zelle-info img {
+    90             height: 30px;
+    91             margin-bottom: 15px;
+    92         }
+    93         .zelle-info p {
+    94             margin: 0;
+    95             font-size: 16px;
+    96             color: #495057;
+    97         }
+    98         .zelle-info .email {
+    99             font-weight: 600;
+   100             color: var(--dark-gray);
+   101             margin-top: 8px;
+   102             user-select: all;
+   103         }
+   104     </style>
+   105 </head>
+   106 <body>
+   107     <div class="container">
+   108         <div class="header">
+   109             <!-- Placeholder for a profile or
+       fundraiser image -->
+   110             <img src="https://via.placeholder.com/100"
+       alt="Fundraiser">
+   111             <h1>Support Our Cause</h1>
+   112             <p class="fundraiser-title">Your
+       contribution is greatly appreciated!</p>
+   113         </div>
+   114
+   115         <div class="donation-options">
+   116             <a href=
+       "https://venmo.com/u/Hambalieu-Jallow" class="btn
+       venmo" target="_blank">
+   117                 <img src=
+       "https://upload.wikimedia.org/wikipedia/commons/4/42/Ve
+       nmo_Logo_White.svg" alt="Venmo">
+   118                 <span>Donate with Venmo</span>
+   119             </a>
+   120             <a href="https://cash.app/$hambaj" class=
+       "btn cashapp" target="_blank">
+   121                 <img src=
+       "https://upload.wikimedia.org/wikipedia/commons/c/c4/Ca
+       sh_App_logo.svg" alt="Cash App">
+   122                 <span>Donate with Cash App</span>
+   123             </a>
+   124         </div>
+   125
+   126         <div class="zelle-info">
+   127             <img src=
+       "https://upload.wikimedia.org/wikipedia/commons/5/52/Ze
+       lle_logo.svg" alt="Zelle">
+   128             <p>For Zelle donations, please send to:</p>
+   129             <p class="email">hambalieujallow@gmail.com
+       </p>
+   130         </div>
+   131     </div>
+   132 </body>
+   133 </html>
+
